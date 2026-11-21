@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "gladiator",
+	"version": "${version}",
+	"name": "Gladiator",
+	"description": "A combat focused mod that adds new weapons and armors!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gladiator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ammiss1.gladiator.Gladiator"
+		],
+		"client": [
+			"net.ammiss1.gladiator.client.GladiatorClient"
+		]
+	},
+	"mixins": [
+		"gladiator.mixins.json",
+		{
+			"config": "gladiator.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
