@@ -5,11 +5,11 @@
 	"name": "Gladiator",
 	"description": "A combat focused mod that adds new weapons and armors!",
 	"authors": [
-		"Me!"
+		"Ammiss1"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/zeye-s/Name-TBD.git"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/gladiator/icon.png",
