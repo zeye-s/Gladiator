@@ -6,6 +6,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.level.block.IronBarsBlock;
+
 import java.util.function.Function;
 
 
@@ -21,7 +25,7 @@ public class ModItems {
     public static final Item Warrior_Helmet = register(
             ModItemsID.Warrior_Helmet,
             Item::new,
-            new Item.Properties()
+            new Item.Properties().humanoidArmor(, ArmorType.HELMET)
     );
 
     public static void Initialize(){
