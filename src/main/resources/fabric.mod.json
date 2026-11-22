@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"net.ammiss1.gladiator.client.GladiatorClient"
+		],
+		"fabric-datagen": [
+			"net.ammiss1.gladiator.client.datagen.GladiatorDataGenerator"
 		]
 	},
 	"mixins": [

@@ -10,5 +10,5 @@ public class ModItemsID {
         return ResourceKey.create(Registries.ITEM, Gladiator.id(name));
     }
 
-    public static final ResourceKey<Item> Warrior_Helmet = create("warrior_helmet");
+    public static final ResourceKey<Item> WARRIOR_HELMET = create("warrior_helmet");
 }

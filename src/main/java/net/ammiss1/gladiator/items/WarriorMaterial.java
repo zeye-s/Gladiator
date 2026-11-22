@@ -4,6 +4,7 @@ import net.ammiss1.gladiator.Gladiator;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorMaterial;
@@ -13,7 +14,7 @@ import net.minecraft.world.item.equipment.EquipmentAssets;
 import java.util.Map;
 
 public class WarriorMaterial {
-    public static final int BASE_DURABILITY = 215;
+    public static final int BASE_DURABILITY= 215;
 
     public static final ResourceKey<EquipmentAsset> WARRIOR_ARMOR_MATERIAL_KEY =
             ResourceKey.create(EquipmentAssets.ROOT_ID, Gladiator.id("warrior"));
