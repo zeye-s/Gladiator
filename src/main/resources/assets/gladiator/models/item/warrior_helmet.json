@@ -1,6 +1,6 @@
 {
-  "parent": "Minecraft:item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gladiator:item/warrior_helmet"
+    "layer0": "gladiator:item/warrior_helmet_flat"
   }
 }
