@@ -22,6 +22,7 @@ public class Gladiator implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.Initialize();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 

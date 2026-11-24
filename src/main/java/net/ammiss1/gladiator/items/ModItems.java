@@ -28,6 +28,7 @@ public class ModItems {
 
 
 
+
     public static void Initialize(){
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
                 .register((creativeTab) -> creativeTab.accept(ModItems.WARRIOR_HELMET));

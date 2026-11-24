@@ -42,7 +42,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	implementation 'com.geckolib:geckolib-fabric-26.2:5.5.8'
+	implementation 'com.geckolib:geckolib-fabric-26.3:5.5.7'
 
 
 }
