@@ -24,10 +24,10 @@ public class WarriorMaterial {
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
             BASE_DURABILITY,
             Map.of(
-                    ArmorType.HELMET, 4,
-                    ArmorType.CHESTPLATE, 8
+                    ArmorType.HELMET, 2,
+                    ArmorType.CHESTPLATE, 6
             ),
-             7,
+             9,
             SoundEvents.ARMOR_EQUIP_IRON,
             0.5F,
             0.0F,
