@@ -12,22 +12,20 @@ import java.util.function.Function;
 
 
 public class ModItems {
-    public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings){
-        Item item = itemFactory.apply(settings.setId(itemKey));
+    public static <I extends Item>I register
+            (ResourceKey<Item> itemKey, Function<Item.Properties, I> itemFactory, Item.Properties settings){
+        I item = itemFactory.apply(settings.setId(itemKey));
         Registry.register(BuiltInRegistries.ITEM, itemKey, item);
         return item;
     }
 
 
-    public static final Item WARRIOR_HELMET = register(
+    public static final WarriorHelmetItem WARRIOR_HELMET = register(
             ModItemsID.WARRIOR_HELMET,
-            Item::new,
+            WarriorHelmetItem::new,
             new Item.Properties().humanoidArmor(WarriorMaterial.INSTANCE, ArmorType.HELMET)
                     .durability(ArmorType.HELMET.getDurability(WarriorMaterial.BASE_DURABILITY)
     ));
-
-
-
 
     public static void Initialize(){
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
